@@ -1,0 +1,16 @@
+"*":
+  "exception-reporting":
+    userId: "97269c7a-c201-cd7a-dbcb-2bc1cf660ddd"
+  welcome:
+    showOnStartup: false
+  core:
+    themes: [
+      "one-light-ui"
+      "atom-light-syntax"
+    ]
+  editor:
+    invisibles: {}
+    fontSize: 17
+    showIndentGuide: true
+  "meteor-helper": {}
+  "merge-conflicts": {}
