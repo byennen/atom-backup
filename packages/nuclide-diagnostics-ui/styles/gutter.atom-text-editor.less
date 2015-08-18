@@ -1,0 +1,37 @@
+@import "ui-variables";
+
+// Styles for gutter glyphs.
+
+.nuclide-diagnostics-gutter-ui-gutter-error {
+  color: @text-color-error;
+}
+
+.nuclide-diagnostics-gutter-ui-gutter-warning {
+  color: @text-color-warning;
+}
+
+// Styles for popup triggered by mousing over the gutter glyph.
+
+.nuclide-diagnostics-gutter-ui-popup {
+  position: absolute;
+}
+
+.nuclide-diagnostics-gutter-ui-popup-diagnostic {
+  background-color: @base-background-color;
+  border-style: solid;
+  border-width: 1px 1px 0 1px;
+  color: @text-color;
+  padding: 5px;
+}
+
+.nuclide-diagnostics-gutter-ui-popup-diagnostic:last-child {
+  border-bottom-width: 1px;
+}
+
+.nuclide-diagnostics-gutter-ui-popup-error {
+  border-color: @text-color-error;
+}
+
+.nuclide-diagnostics-gutter-ui-popup-warning {
+  border-color: @text-color-warning;
+}

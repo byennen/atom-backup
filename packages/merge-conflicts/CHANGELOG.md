@@ -1,3 +1,12 @@
+## 1.3.5
+
+- Using the "stage" button no longer triggers a crash. [#173](https://github.com/smashwilson/merge-conflicts/pull/173)
+
+## 1.3.4
+
+- Scroll the merge conflicts view when many conflicts exist. [#170](https://github.com/smashwilson/merge-conflicts/pull/170)
+- Prune some dead code. [#167](https://github.com/smashwilson/merge-conflicts/pull/167)
+
 ## 1.3.3
 
 - With multiple projects, remember the git repository that you initially detected conflicts within. [#165](https://github.com/smashwilson/merge-conflicts/pull/165)

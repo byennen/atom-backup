@@ -1,0 +1,31 @@
+
+/*
+ * Copyright (c) 2015-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the license found in the LICENSE file in
+ * the root directory of this source tree.
+ */
+
+module.exports = {
+  configDefaults: {
+    pathToMerlin: 'ocamlmerlin'
+  },
+
+  activate: function activate() {},
+
+  getHyperclickProvider: function getHyperclickProvider() {
+    return require('./HyperclickProvider');
+  },
+
+  createAutocompleteProvider: function createAutocompleteProvider() {
+    var getSuggestions = require('./AutoComplete').getAutocompleteSuggestions;
+    return {
+      selector: '.source.ocaml',
+      inclusionPriority: 1,
+      disableForSelector: '.source.ocaml .comment',
+      getSuggestions: getSuggestions
+    };
+  }
+};
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi92YXIvZm9sZGVycy94Zi9yc3BoNF9jNTczMTVyczU3eHhzZHNrcnhudjM2dDAvVC90bXBlbW0ySHVwdWJsaXNoX3BhY2thZ2VzL2FwbS9udWNsaWRlLW9jYW1sL2xpYi9tYWluLmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLFdBQVcsQ0FBQzs7Ozs7Ozs7OztBQVdaLE1BQU0sQ0FBQyxPQUFPLEdBQUc7QUFDZixnQkFBYyxFQUFFO0FBQ2QsZ0JBQVksRUFBRSxhQUFhO0dBQzVCOztBQUVELFVBQVEsRUFBQSxvQkFBUyxFQUNoQjs7QUFFRCx1QkFBcUIsRUFBQSxpQ0FBRztBQUN0QixXQUFPLE9BQU8sQ0FBQyxzQkFBc0IsQ0FBQyxDQUFDO0dBQ3hDOztBQUVELDRCQUEwQixFQUFBLHNDQUFVO0FBQ2xDLFFBQUksY0FBYyxHQUFHLE9BQU8sQ0FBQyxnQkFBZ0IsQ0FBQyxDQUFDLDBCQUEwQixDQUFDO0FBQzFFLFdBQU87QUFDTCxjQUFRLEVBQUUsZUFBZTtBQUN6Qix1QkFBaUIsRUFBRSxDQUFDO0FBQ3BCLHdCQUFrQixFQUFFLHdCQUF3QjtBQUM1QyxvQkFBYyxFQUFkLGNBQWM7S0FDZixDQUFDO0dBQ0g7Q0FDRixDQUFDIiwiZmlsZSI6Ii92YXIvZm9sZGVycy94Zi9yc3BoNF9jNTczMTVyczU3eHhzZHNrcnhudjM2dDAvVC90bXBlbW0ySHVwdWJsaXNoX3BhY2thZ2VzL2FwbS9udWNsaWRlLW9jYW1sL2xpYi9tYWluLmpzIiwic291cmNlc0NvbnRlbnQiOlsiJ3VzZSBiYWJlbCc7XG4vKiBAZmxvdyAqL1xuXG4vKlxuICogQ29weXJpZ2h0IChjKSAyMDE1LXByZXNlbnQsIEZhY2Vib29rLCBJbmMuXG4gKiBBbGwgcmlnaHRzIHJlc2VydmVkLlxuICpcbiAqIFRoaXMgc291cmNlIGNvZGUgaXMgbGljZW5zZWQgdW5kZXIgdGhlIGxpY2Vuc2UgZm91bmQgaW4gdGhlIExJQ0VOU0UgZmlsZSBpblxuICogdGhlIHJvb3QgZGlyZWN0b3J5IG9mIHRoaXMgc291cmNlIHRyZWUuXG4gKi9cblxubW9kdWxlLmV4cG9ydHMgPSB7XG4gIGNvbmZpZ0RlZmF1bHRzOiB7XG4gICAgcGF0aFRvTWVybGluOiAnb2NhbWxtZXJsaW4nLFxuICB9LFxuXG4gIGFjdGl2YXRlKCk6IHZvaWQge1xuICB9LFxuXG4gIGdldEh5cGVyY2xpY2tQcm92aWRlcigpIHtcbiAgICByZXR1cm4gcmVxdWlyZSgnLi9IeXBlcmNsaWNrUHJvdmlkZXInKTtcbiAgfSxcblxuICBjcmVhdGVBdXRvY29tcGxldGVQcm92aWRlcigpOiBtaXhlZCB7XG4gICAgdmFyIGdldFN1Z2dlc3Rpb25zID0gcmVxdWlyZSgnLi9BdXRvQ29tcGxldGUnKS5nZXRBdXRvY29tcGxldGVTdWdnZXN0aW9ucztcbiAgICByZXR1cm4ge1xuICAgICAgc2VsZWN0b3I6ICcuc291cmNlLm9jYW1sJyxcbiAgICAgIGluY2x1c2lvblByaW9yaXR5OiAxLFxuICAgICAgZGlzYWJsZUZvclNlbGVjdG9yOiAnLnNvdXJjZS5vY2FtbCAuY29tbWVudCcsXG4gICAgICBnZXRTdWdnZXN0aW9uc1xuICAgIH07XG4gIH1cbn07XG4iXX0=
